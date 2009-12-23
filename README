@@ -1,0 +1,7 @@
+Floodgate
+
+Ever tried to find a caching reverse proxy to use in front of your web application or web servers?  There are a few decent options.  Ever try to find one that's really fast, easy to use, doesn't try to make every conceivable thing an option?  Varnish is one of the only ones that comes close to that description, but have you ever tried to make Varnish stable in the face of a high load?
+
+Floodgate is my response to that quest. The goal is that it should be a fast, scalable caching proxy server that runs well right out of the box with reasonable defaults, and that it should hold up in the face of high loads without requiring significant effort to tune it.  As an added benefit, it should support a pluggable architecture such that specific steps in the handling of request can be customized if one has a specific feature that must be supported.
+
+It is based in large part off already existing code in the Swiftiply project which can serve in excess of 25000 requests per second for a 1k file off of a single 3.0 ghz core, so the core capability and functionality needed for a really good caching reverse http proxy is already available to me.
